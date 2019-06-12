@@ -12,6 +12,7 @@
 		06E390F422AE14E000A960CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E390F222AE14E000A960CE /* Main.storyboard */; };
 		06E390F622AE14E200A960CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E390F522AE14E200A960CE /* Assets.xcassets */; };
 		06E390F922AE14E200A960CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E390F722AE14E200A960CE /* LaunchScreen.storyboard */; };
+		06E3910322AE1AB100A960CE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3910222AE1AB100A960CE /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		06E390F522AE14E200A960CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06E390F822AE14E200A960CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06E390FA22AE14E200A960CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E3910222AE1AB100A960CE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		06E390ED22AE14E000A960CE /* NotificationCenter UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				06E390EE22AE14E000A960CE /* AppDelegate.swift */,
-				06E390F022AE14E000A960CE /* ViewController.swift */,
+				06E3910122AE1A8000A960CE /* AppDelegate */,
+				06E3910022AE1A7400A960CE /* ViewControllers */,
 				06E390F222AE14E000A960CE /* Main.storyboard */,
 				06E390F522AE14E200A960CE /* Assets.xcassets */,
 				06E390F722AE14E200A960CE /* LaunchScreen.storyboard */,
 				06E390FA22AE14E200A960CE /* Info.plist */,
 			);
 			path = "NotificationCenter UserInfo";
+			sourceTree = "<group>";
+		};
+		06E3910022AE1A7400A960CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				06E390F022AE14E000A960CE /* ViewController.swift */,
+				06E3910222AE1AB100A960CE /* ViewController2.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		06E3910122AE1A8000A960CE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				06E390EE22AE14E000A960CE /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			files = (
 				06E390F122AE14E000A960CE /* ViewController.swift in Sources */,
 				06E390EF22AE14E000A960CE /* AppDelegate.swift in Sources */,
+				06E3910322AE1AB100A960CE /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
