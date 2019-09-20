@@ -1,5 +1,5 @@
 //
-//  ViewController1.swift
+//  ViewController3.swift
 //  NotificationCenter
 //
 //  Created by mallikarjun on 20/09/19.
@@ -8,20 +8,21 @@
 
 import UIKit
 
-class ViewController1: UIViewController {
+class ViewController3: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       //
-        
     }
     
 
-    @IBAction func nextButtonClicked(_ sender: Any) {
-        
-         NotificationCenter.default.post(name: Notification.Name("callMethodPrint1FromVC2"), object: nil)
+   
+    @IBAction func backToVC1(_ sender: Any) {
     }
     
+    
+    @IBAction func backToVC2(_ sender: Any) {
+        
+    }
 }

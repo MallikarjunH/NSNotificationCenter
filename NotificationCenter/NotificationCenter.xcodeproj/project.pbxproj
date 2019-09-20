@@ -13,6 +13,7 @@
 		0611B7832334E296007BB7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0611B7812334E296007BB7BF /* LaunchScreen.storyboard */; };
 		0611B78B2334E331007BB7BF /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611B78A2334E331007BB7BF /* ViewController1.swift */; };
 		0611B78D2334E33F007BB7BF /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611B78C2334E33F007BB7BF /* ViewController2.swift */; };
+		0611B7962334EE98007BB7BF /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611B7952334EE98007BB7BF /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0611B7842334E297007BB7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0611B78A2334E331007BB7BF /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		0611B78C2334E33F007BB7BF /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		0611B7952334EE98007BB7BF /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				0611B78A2334E331007BB7BF /* ViewController1.swift */,
 				0611B78C2334E33F007BB7BF /* ViewController2.swift */,
+				0611B7952334EE98007BB7BF /* ViewController3.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				0611B78B2334E331007BB7BF /* ViewController1.swift in Sources */,
 				0611B7792334E288007BB7BF /* AppDelegate.swift in Sources */,
+				0611B7962334EE98007BB7BF /* ViewController3.swift in Sources */,
 				0611B78D2334E33F007BB7BF /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
