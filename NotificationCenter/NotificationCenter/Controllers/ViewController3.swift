@@ -27,8 +27,7 @@ class ViewController3: UIViewController {
    
     @IBAction func backToVC1(_ sender: Any) {
         
-         NotificationCenter.default.post(name: Notification.Name("callMethodPrint2FromVC1"), object: nil)
-        
+        NotificationCenter.default.post(name: Notification.Name("callMethodPrint2FromVC1"), object: nil)
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "ViewController1Id") as? ViewController1
         navigationController?.pushViewController(vc2!, animated: true)
@@ -37,7 +36,7 @@ class ViewController3: UIViewController {
     
     @IBAction func backToVC2(_ sender: Any) {
         
-         NotificationCenter.default.post(name: Notification.Name("callMethodPrint2FromVC2"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("callMethodPrint2FromVC2"), object: nil)
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "ViewController2Id") as? ViewController2
         navigationController?.pushViewController(vc2!, animated: true)
@@ -46,6 +45,7 @@ class ViewController3: UIViewController {
     
     //Remolve notification object
     deinit {
+       
         NotificationCenter.default.removeObserver(self, name: Notification.Name("callMethodPrint1FromVC3"), object: nil)
     }
 }
