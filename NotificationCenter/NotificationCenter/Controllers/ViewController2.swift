@@ -14,13 +14,13 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        //Recieve notification
+        NotificationCenter.default.addObserver(self, selector: #selector(self.print1Method(notification:)), name: Notification.Name("callMethodPrint1FromVC2"), object: nil)
        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //Recieve notification
-        NotificationCenter.default.addObserver(self, selector: #selector(self.print1Method(notification:)), name: Notification.Name("V1-To-callMethodPrint1FromVC2"), object: nil)
+        
     }
     
     @objc func print1Method(notification: Notification) {
@@ -28,25 +28,19 @@ class ViewController2: UIViewController {
         print("Notification came from VC 1")
     }
     
-    @objc func print2Method(notification: Notification) {
-        
-        print("Notification came from VC 3")
+    func someMethod(){
+         print("Test Test")
     }
-    
     
     @IBAction func backToVC1(_ sender: Any) {
         //Post Notification
-        
-        
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc2 = storyBoard.instantiateViewController(withIdentifier: "ViewController1Id") as? ViewController1
-        navigationController?.pushViewController(vc2!, animated: true)
+    
+        self.navigationController?.popViewController(animated: true)
     }
     
     
     @IBAction func nextToVC2(_ sender: Any) {
          //Post Notification
-        
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "ViewController3Id") as? ViewController3
@@ -56,7 +50,7 @@ class ViewController2: UIViewController {
      //Remove notification object
     deinit {
        
-        NotificationCenter.default.removeObserver(self, name: Notification.Name("V1-To-callMethodPrint1FromVC2"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("callMethodPrint1FromVC2"), object: nil)
     }
     
 }
