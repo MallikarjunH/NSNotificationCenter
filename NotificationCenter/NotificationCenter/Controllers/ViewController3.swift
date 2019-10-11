@@ -14,15 +14,7 @@ class ViewController3: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //Recieve notification
        
-    }
-    
-
-    @objc func print1Method(notification: Notification) {
-        
-        print("Notification came from VC 2")
     }
    
     @IBAction func backToVC1(_ sender: Any) {
@@ -36,16 +28,11 @@ class ViewController3: UIViewController {
     
     @IBAction func backToVC2(_ sender: Any) {
         
-       
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc2 = storyBoard.instantiateViewController(withIdentifier: "ViewController2Id") as? ViewController2
         navigationController?.pushViewController(vc2!, animated: true)
         
     }
     
-    //Remolve notification object
-    deinit {
-       
-        
-    }
+
 }
